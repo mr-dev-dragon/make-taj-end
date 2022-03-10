@@ -1,5 +1,5 @@
 <?php 
-       $mysqli = new mysqli('localhost', 'root', '','Database_e-commerce');
+       $mysqli = new mysqli('localhost', 'root', '123','Database_e-commerce');
        $result = $mysqli->query(" SELECT * FROM  `customers` ");
 
  ?>

@@ -2,7 +2,7 @@
 
 
 session_start();
-$mysqli = new mysqli('localhost', 'root', '', 'database_e-commerce') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('localhost', 'root', '123', 'database_e-commerce') or die(mysqli_error($mysqli));
 
 if (isset($_POST['log_up'])){
   $f_name = $_POST['f-name'];
