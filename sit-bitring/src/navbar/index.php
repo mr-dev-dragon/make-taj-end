@@ -1,24 +1,3 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-expand-sm  navbar-light bg-light">
-  <div class="container-fluid" >
-
-    
- 
-
-  <div class="d-flex" >
-      <ul class="navbar-nav d-flex  mx-5 flex-row" >
-
-
-   
- 
-       
-      
-    </ul>
- 
-      </div> 
-    
-    </div>
-</nav>
- -->
 
 
 
@@ -37,14 +16,20 @@
     <ul class="navbar-right">
 
 
-     <li><a href="#" id="my">     <button type="button" class="btn btn-primary "><i class="bi bi-heart"></i>  </button> <span class="badge">4</span></a></li>
-      <li><a href="#" id="cart">      <button type="button" class="btn btn-primary mx-2"><i class="bi bi-cart3"></i></button><span class="badge">3</span></a></li>
+     <li><a href="#" id="my">     <i width='100px' class="bi bi-heart"></i >   <span class="badge">4</span></a></li>
+      <li><a href="#" id="cart">    <i class="bi bi-cart3"></i><span class="badge">3</span></a></li>
     </ul> <!--end navbar-right -->
   </div> 
-  
-  
-  
- 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -91,30 +76,64 @@
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
         <span class="item-name">Kindle, 6" Glare-Free To...</span>
         <span class="item-price">$129.99</span>
-        <input class="item-quantity" type="number" >
+        <input class="item-quantity" type="number">
       </li>
     </ul>
-
-    <button href="#" class="button" name="">buy</button>
+    <a type="button" href="#" class="button" name="buy">buy</a>
   </div> <!--end shopping-cart -->
 </div> <!--end container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--end container -->
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
   <div class="shopping-cartB">
     <div class="shopping-cart-headerB">

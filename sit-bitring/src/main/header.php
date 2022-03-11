@@ -11,7 +11,7 @@
       <img src="https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/6706ea78-007.jpg" height='600px'class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h2>love yousalf</h2>
-        <p>if you dom't love yoursalf who will ? just a domn qoution </p>
+        <p>if you dom't love yoursalf who will ? just a domn qoution</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -39,6 +39,47 @@
   </button>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

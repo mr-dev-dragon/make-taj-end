@@ -188,11 +188,12 @@ nav ul li a:hover {
 .shopping-cartB {
   z-index: 1000;
   position: absolute;
-  margin: 20px 100px 0px 20px;
+  margin: 50px 100px 0px 0px;
   float: right;
   background: #020000;
   width: 420px;
   left: 60%;
+  top: 30;
   border-radius: 5px;
   padding: 50px;
 }

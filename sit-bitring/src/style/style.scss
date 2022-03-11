@@ -1,5 +1,6 @@
 $main-color: #6394F8;
 $light-text: #ABB0BE;
+
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
@@ -212,11 +213,12 @@ nav {
 .shopping-cartB {
   z-index: 1000;
   position: absolute;
-  margin: 20px 100px 0px 20px ;
+  margin: 50px 100px 0px 0px ;
   float: right;
   background: rgb(2, 0, 0);
   width: 420px;
   left:60%;
+  top: 30;
   border-radius: 5px;
   padding: 50px;
   
@@ -619,6 +621,33 @@ a{
     font-weight:600
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
