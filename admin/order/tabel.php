@@ -37,13 +37,6 @@
 
   </tbody>
 </table>
-
-
-
-
-
-
-
   <div class='container'>
     <h1 class="text-center  mb-3 li">order ditals</h1>
 
