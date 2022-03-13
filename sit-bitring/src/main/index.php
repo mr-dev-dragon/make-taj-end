@@ -56,14 +56,16 @@
         </div>
       </div>
       </div>
-       <script>
-         /*
-	Add to cart fly effect with jQuery. - May 05, 2013
-	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
-	license: https://www.opensource.org/licenses/mit-license.php
-*/   
+   
 
-$('.add-to-cart').on('click', function () {
+
+    <?php endwhile?>
+
+
+    <script>
+       
+
+$('.add-to-cart').on('click', function (){
         var cart = $('.bi-cart3');
         var imgtodrag = $(this).parent('.item').find("img").eq(0);
         if (imgtodrag) {
@@ -89,28 +91,24 @@ $('.add-to-cart').on('click', function () {
             }, 1500, 'easeInOutExpo');
             
             setTimeout(function () {
-                cart.effect("explode", {
+                cart.effect("", {
                       pieces:16
 
-              
-            }, 2000);
+
+                }, 200);
+            }, 1500);
 
             imgclone.animate({
                 'width': 5,
                     'height': 5
             }, function () {
-                $(this).detach()
+                $(this).detach();
             });
-        }
-    });
-       </script>
-
-
-
-
-    <?php endwhile?>
-
-
+          }
+        } );
+    
+     
+  </script>
 
 
 

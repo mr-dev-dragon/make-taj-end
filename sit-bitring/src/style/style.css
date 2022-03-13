@@ -599,14 +599,14 @@ h4 {
   color: #37680f;
 }
 
-.d-flex > button {
+.d-flex button {
   background-color: #37680f;
-  border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  border-radius: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   float: right;
   color: white;
-  text-transform: uppercase;
-  cursor: pointer;
+  border: none;
+  padding: 0 10px 0 10px;
 }
 
 .d-flex {
