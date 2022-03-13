@@ -1,5 +1,5 @@
 <?php
-       $mysqli = new mysqli('localhost', 'root', '123','Database_e-commerce');
+
        $result = $mysqli->query(" SELECT * FROM  `orders` ");
       
 
@@ -60,8 +60,8 @@
        
   
   
-       $mysqlitow = new mysqli('localhost', 'root', '123','Database_e-commerce');
-       $resulttwo = $mysqlitow->query(" SELECT * FROM `orderdetails`");?>
+       $mysqli = new mysqli('localhost', 'root', '123','Database_e-commerce');
+       $resulttwo = $mysqli->query(" SELECT * FROM `orderdetails`");?>
       <?php while ($rowtwo = $resulttwo->fetch_assoc()): ?>
         <tr>
         <td><?php echo $rowtwo['productID']; ?></td>

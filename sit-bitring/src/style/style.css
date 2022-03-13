@@ -18,7 +18,7 @@
 }
 
 .main-color-text {
-  color: #6394F8;
+  color: #07b31e;
 }
 
 nav {
@@ -128,12 +128,12 @@ nav ul li a:hover {
 }
 
 .shopping-cart .shopping-cart-items .item-price {
-  color: #6394F8;
+  color: #07b31e;
   margin-right: 8px;
 }
 
 .shopping-cart .shopping-cart-items .item-quantity {
-  color: #ABB0BE;
+  color: #646464;
   font-weight: 900;
   color: white;
   width: 60px;
@@ -163,7 +163,7 @@ nav ul li a:hover {
 }
 
 .button {
-  background: #6394F8;
+  background: #07b31e;
   color: white;
   text-align: center;
   padding: 12px;
@@ -175,7 +175,7 @@ nav ul li a:hover {
 }
 
 .button:hover {
-  background: #729ef9;
+  background: #08c220;
 }
 
 .clearfix:after {
@@ -225,12 +225,12 @@ nav ul li a:hover {
 }
 
 .shopping-cartB .shopping-cart-itemsB .item-priceB {
-  color: #6394F8;
+  color: #07b31e;
   margin-right: 8px;
 }
 
 .shopping-cartB .shopping-cart-itemsB .item-quantityB {
-  color: #ABB0BE;
+  color: #646464;
   float: right;
 }
 
@@ -454,6 +454,7 @@ a {
 .site-footer a:hover {
   color: #1657da;
   text-decoration: none;
+  font-size: larger;
 }
 
 .footer-links {
@@ -466,6 +467,7 @@ a {
 }
 
 .footer-links a {
+  text-decoration: none;
   color: #929191;
 }
 
@@ -489,11 +491,12 @@ a {
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: #9c9090;
+  background-color: #00f77c;
 }
 
 .copyright-text {
   margin: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 991px) {
@@ -579,5 +582,46 @@ a {
     margin-right: 0;
     font-weight: 600;
   }
+}
+
+#titlel {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #aa6d11;
+  font-size: 30px;
+}
+
+#description {
+  color: #646464;
+  font-size: large;
+}
+
+h4 {
+  color: #37680f;
+}
+
+.d-flex > button {
+  background-color: #37680f;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  float: right;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.d-flex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#hi {
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 15px 35px -5px #292929 inset;
+          box-shadow: 0px 15px 35px -5px #292929 inset;
+}
+
+#adds {
+  position: relative;
+  left: 100;
 }
 /*# sourceMappingURL=style.css.map */

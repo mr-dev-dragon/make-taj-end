@@ -1,10 +1,9 @@
-
-
-
 <?php
+  $mysqli = new mysqli('localhost', 'root', '123','Database_e-commerce');
+
+
 session_start();
 $addbtn = true;
-$mysqli = new mysqli('localhost', 'root', '123', 'Database_e-commerce') or die(mysqli_error($mysqli));
 $id = 0;
 
 if (isset($_POST['save'])){
@@ -28,16 +27,24 @@ else{
 
  if(isset($_GET['delete'])){
     $id = $_GET['delete'];
-    $mysqli->query("DELETE FROM `products` WHERE  productID = '$id'") or die($mysqli->error());
+     $mysqli->query("SET FOREIGN_KEY_CHECKS=0; -- to disable them") or die($mysqli->error());
+     $mysqli->query("DELETE FROM `products` WHERE  productID = '$id';") or die($mysqli->error());
+      $mysqli->query(" SET FOREIGN_KEY_CHECKS=1; -- to re-enable them") or die($mysqli->error());
     $_SESSION['message'] =  "Record has been Delete!";
     $_SESSION['msg_type'] = 'danger';
     header("location:index.php#produit");
  }
 
 
+
+
+ 
+
+
+
  if (isset($_GET['edit'])){
    $id = $_GET['edit'];
-   $result = $mysqli->query("SELECT * FROM products WHERE productID ='$id'") or die($mysqli->error());
+   $result = $mysqli->query("SELECT * FROM products WHERE productID ='$id'=1 LIMIT 1 ") or die($mysqli->error());
 
       $row = $result->fetch_array();
        $productName = $row['productName'];

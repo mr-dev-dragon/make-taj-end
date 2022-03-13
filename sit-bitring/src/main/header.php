@@ -6,26 +6,30 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
+  <div  id="hi" class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/6706ea78-007.jpg" height='600px'class="d-block w-100" alt="...">
+      <img src="https://raw.githubusercontent.com/Ahmed-Aoulad-Amar/tajv/main/sit-bitring/src/main/img/a.png" height='700px'class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>love yousalf</h2>
-        <p>if you dom't love yoursalf who will ? just a domn qoution</p>
+  
+        <img id="adds" src="https://m.clinique.com.hk/media/export/cms/products/1200x1500/cl_sku_7T5W01_1200x1500_0.png" height='250px' alt="">
+
+   
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://www.premiumbeautynews.com/IMG/arton16680.jpg" height='600px'class="d-block w-100" alt="...">
+    <div id="hi"  class="carousel-item">
+      <img src="https://raw.githubusercontent.com/Ahmed-Aoulad-Amar/tajv/main/sit-bitring/src/main/img/c.png" height='700px'class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>love your body</h2>
-        <p> </p>
+ <img id="adds" src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" height='250px' >
+ 
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://www.glowellmag.com/wp-content/uploads/2019/08/ugly-truth-about-beauty-products-1600x1067.jpg" height='700px' class="d-block w-100" alt="...">
+    <div id="hi" class="carousel-item">
+      <img src="https://raw.githubusercontent.com/Ahmed-Aoulad-Amar/tajv/main/sit-bitring/src/main/img/b.png" height='700px' class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>be shin</h2>
-        <p>to be beautiful be kind first gril without cutenss of fame like ba 3abdslam</p>
+
+
+       
+       <img id="adds" src="https://www.lancome.co.id/wp-content/uploads/2020/08/L8209100.png" height='250px' alt="">
       </div>
     </div>
   </div>

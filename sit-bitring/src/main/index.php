@@ -17,203 +17,110 @@
   <hr>
   <br>
   <div class="row">
-  <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">Black Pants</h5>
-    </center>
-  </div>
-</div>
-</div>
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
+<?php 
+
+       $result = $mysqli->query(" SELECT * FROM  `products` ");
+
+ ?>
+ 
+
+<?php while ($row = $result->fetch_assoc()): ?>
+
     
-
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-    
-
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-    
+     
+  
+      
 
 
 
 
 
 
+        <div class=" col-lg-3">
+          <div class="card" style="width: 18rem;">
+        <span id="heart" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
+        <img height="300" src="<?php echo $row['image']; ?>"class="first-image">
+        <center> <h1 id="titlel">    <?php echo $row['productName']; ?></h1>   </center>
+        <div class="card-body">
+          <a id='description' ><center> <?php echo $row['description']; ?></center></a>
+          <hr>
+          <form  action="">
+              <input type="hidden" name="" value="<?php echo $row['productID']; ?>">
+              <input type="hidden" name="" value="<?php echo $row['quantityInStock'] ;?>">
+              <div class='d-flex item'>
+                  <img style="visibility: hidden; position: absolute" height="300" src="<?php echo $row['image']; ?>"class="first-image">
+                  <h4 class="card-title"><?php echo $row['unitPrice']; ?>$</h4>
+                  <button class="add-to-cart" type="submit"><i class="bi  bi-plus-circle-dotted"></i> add to cart</button> 
+               </div>
+          </form>
+        </div>
+      </div>
+      </div>
+       <script>
+         /*
+	Add to cart fly effect with jQuery. - May 05, 2013
+	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
+	license: https://www.opensource.org/licenses/mit-license.php
+*/   
+
+$('.add-to-cart').on('click', function () {
+        var cart = $('.bi-cart3');
+        var imgtodrag = $(this).parent('.item').find("img").eq(0);
+        if (imgtodrag) {
+            var imgclone = imgtodrag.clone()
+                .offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '1',
+                    'position': 'absolute',
+                     'visibility': 'visible',
+                    'height': '350px',
+                    'width': '250px',
+                    'z-index': '100'
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1500, 'easeInOutExpo');
+            
+            setTimeout(function () {
+                cart.effect("explode", {
+                      pieces:16
+
+              
+            }, 2000);
+
+            imgclone.animate({
+                'width': 5,
+                    'height': 5
+            }, function () {
+                $(this).detach()
+            });
+        }
+    });
+       </script>
+
+
+
+
+    <?php endwhile?>
 
 
 
 
 
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-    
-
-
-
-
-
-      <div class="  col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-    
-
-
-
-
-
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-    
-
-
-
-
-
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
 
    <?php include 'header.php' ?>
 
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-      <div class=" col-lg-3">
-    <div class="card" style="width: 18rem;">
-      <span id="heart-second" value="So" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
-  <img src="https://global-uploads.webflow.com/5d552994548be47b97db38c2/5dd334dab513208089349904_Linne%203.png" class="first-image">
-  <div class="card-body">
-    <a href="#" onclick="addCart()"><center>Add to cart</center></a>
-    <hr>
-    <center>
-      <h5 class="card-title">T-shirt</h5>
-    </center>
-  </div>
-</div>
-</div>
-
+     
 
 
  
-
+</div>
 
 

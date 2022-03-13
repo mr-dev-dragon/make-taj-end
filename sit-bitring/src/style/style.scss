@@ -1,5 +1,5 @@
-$main-color: #6394F8;
-$light-text: #ABB0BE;
+$main-color: #07b31e;
+$light-text: #646464;
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
 
@@ -491,6 +491,7 @@ a{
 {
   color:#1657da;
   text-decoration:none;
+  font-size: larger;
 }
 .footer-links
 {
@@ -503,6 +504,7 @@ a{
 }
 .footer-links a
 {
+  text-decoration: none;
   color:#929191
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
@@ -526,11 +528,13 @@ a{
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#9c9090
+  background-color:#00f77c;
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
+  font-size: 18px;
+  
 }
 @media (max-width:991px)
 {
@@ -624,18 +628,44 @@ a{
 
 
 
+#titlel{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #aa6d11;
+  font-size: 30px;
+}
+#description{
 
 
+color: $light-text;
+font-size: large;
+}
 
+h4{
+  color: #37680f;
+}
+.d-flex>button{
+  background-color:#37680f;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  float: right;
+  color: rgb(255, 255, 255);
+      text-transform: uppercase;
+          cursor: pointer;
+}
+.d-flex {
+  justify-content: space-around;
+}
+#hi{
+  border-radius: 40px;
+   box-shadow: 0px 15px 35px -5px rgb(41, 41, 41) inset;
+}
 
+#adds{
+  position: relative;
+   
+  left: 100;
 
-
-
-
-
-
-
-
+}
 
 
 
