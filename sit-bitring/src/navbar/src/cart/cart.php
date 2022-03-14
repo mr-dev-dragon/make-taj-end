@@ -13,149 +13,28 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <div class=' container '> 
-      
-           
-          <table class="table table-striped">
-        <thead>
-          <tr>
-            <th class=""></th>
-            <th class=""></th>
-            <th class=""></th>
-            <th class=""></th>
-            <th class=""></th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- shopping cart contents -->
-          <tr class='td'>
-            <td><img src="https://www.kroger.com/product/images/large/front/0007548609205" width="70px" height="70px" id="cart-img"></td>
-            <td><input class='input-' type="number" value="1" min="0" max="99" ></td>
-            <td><p class="tital-"> Design Bundle Package</p></td>
-            <td><p class="price-">79.00$</p></td>
-            <td><p class="remove"><i class="bi btn vv bi-x-circle-fill"></i></p></td>
-          </tr>
-          <tr class="extracosts">
-            <td class="light-">Delebery Tax</td>
-            <td></td>
-            <td  ><p class="ln">35.00$</p></td>
-            <td colspan="2"></td>
-          </tr>
-          <tr class="totalprice">
-            <td class="light">Total:</td>
-            <td colspan="2">&nbsp;</td>
-            <td colspan="2"><span class="thick">$225.45</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+         <table class="show-cart table">
+          
+        </table>
+        <div class='hoho'>Total price: <span class=" btn- total-cart"> </span>$</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">buy now</button>
+
+        <button class="clear-cart btn btn-danger"><i class="bi bi-trash3"></i>Clear Cart</button></div>
+        <button type="button" class="btn btn-success"> <i class="bi bi-credit-card-2-front-fill"></i> buy now</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
- 
-
-
-
   </div>
 </body>
-<style>
-#cart-img{
-   border: 2px solid #aa6d11;
-  border-radius:10px;
-}
-.input-{
-  width: 43px;
-margin-top: 30px;
-border-radius: 5px;
- border: 2px solid #aa6d11;
-  
-}
-.tital-{
-  float: left;
-  font-size:15px;
-  margin-left: -73px;
-}
-.tital---{
-  float: left;
-  font-size:15px;
-  margin-left: -53px;
-}
-.price-{
-  float: left;
-  font-size:18px;
-  margin-left: -90px;
-  margin-top:35px;
-  color:#37680f;
-
-}
-.remove{
-  margin-top: 20px;
-}
-.td{
-  border-bottom :2px solid #aa6d11;
-}
-.extracosts{
-  background-color:#ffd9007a;
-}
-.light-{
-  color: #333;
-  font-family :roboto, arial, helvet;
-}
-.light{
-
-  font-family :roboto, arial, helvet;
-  font-size: 20px;
-  font-width:700;
-}
-.ln{
-  margin-left:70px;
-}
-.thick{
-
-    font-size: 20px;
-  font-width:700;
-
-  color:#30680f;
-}
-.vv {
-  border:2px solid red;
-}
-.vvv {
-  border:2px solid red;
- padding:5px;
- gap:5px;
-  border-radius:5px;
-
-}
-.price-a{
-  float: left;
-  font-size:18px;
-  margin-left: -90px;
-  margin-top:35px;
-  color:#37680f;
-
-}
-.remove-{
-  margin-top:10px;
-
-  margin-bottom:0px;
-}
-.lc{
-  margin-bottom:5PX;
-}
-.aa{
-  margin-left:0px;
-}
-</style>
+ <style>
+    .btn-{
+        color:#37680f;
+        font-size:20px;
+    }
+    .hoho{
+      font-size:20px;
+      color:red;
+    }
+ </style>

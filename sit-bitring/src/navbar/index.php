@@ -32,7 +32,7 @@
 
                 <i class="bi  bi-cart3"></i>
                   <span class="bg-danger badge">
-                   4
+                   <span class="total-count"></span>
                   </span>
               </button>                
             </li>
