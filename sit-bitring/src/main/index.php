@@ -22,20 +22,8 @@
        $result = $mysqli->query(" SELECT * FROM  `products` ");
 
  ?>
- 
 
 <?php while ($row = $result->fetch_assoc()): ?>
-
-    
-     
-  
-      
-
-
-
-
-
-
         <div class=" col-lg-3">
           <div class="card" style="width: 18rem;">
         <span id="heart" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
@@ -63,8 +51,7 @@
 
 
     <script>
-       
-
+      
 $('.add-to-cart').on('click', function (){
         var cart = $('.bi-cart3');
         var imgtodrag = $(this).parent('.item').find("img").eq(0);
