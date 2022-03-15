@@ -13,6 +13,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+<form action="pay.php" method="post">
          <table class="show-cart table">
           
         </table>
@@ -20,8 +21,9 @@
       </div>
       <div class="modal-footer">
 
-        <button class="clear-cart btn btn-danger"><i class="bi bi-trash3"></i>Clear Cart</button></div>
-        <button type="button" class="btn btn-success"> <i class="bi bi-credit-card-2-front-fill"></i> buy now</button>
+        <button class="clear-cart btn btn-danger"><i class="bi bi-trash3"></i>Clear Cart</button>
+        <button type="submit" class="btn btn-success"> <i class="bi bi-credit-card-2-front-fill"></i> buy now</button>
+</form>      
       </div>
     </div>
   </div>

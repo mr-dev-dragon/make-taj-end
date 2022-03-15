@@ -357,13 +357,13 @@ h4 {
   color: #37680f;
 }
 
-.d-flex button {
+.pp {
   background-color: #37680f;
   border-radius: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   float: right;
   color: white;
-  border: none;
+  border: 2px solid #333;
   padding: 0 10px 0 10p;
 }
 

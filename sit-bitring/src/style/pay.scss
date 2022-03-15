@@ -1,60 +1,8 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&amp;family=Open+Sans&amp;display=swap');
 
-
-
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
-body {
-  min-height: 100%;
-  font-family: 'Open Sans', sans-serif;
-}
-body {
-  background: linear-gradient(50deg, #e7e7e7, rgb(121, 121, 121));
-}
-
-
-/*--------------------
-Buttons
---------------------*/
-.btn {
-  display: block;
-  background: hsl(86, 76%, 71%);
-  color: hsl(0, 0, 100);
-  text-decoration: none;
-  margin: 20px 0;
-  padding: 15px 15px;
-  border-radius: 5px;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all .2s ease-in-out;
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
-    border-radius: 5px;
-  }
-
-  &:hover::after {
-    background: hsla(0, 0, 0, 0.1);
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
-  }
-
-}
-
+/*---
 /*--------------------
 Form
 --------------------*/
@@ -333,7 +281,7 @@ Credit Card
 
   .ccv {
     height: 36px;
-    background: #fff;
+    background: rgb(60, 255, 0);
     width: 91%;
     border-radius: 5px;
     top: 110px;
@@ -347,7 +295,7 @@ Credit Card
 
     label {
       margin: -25px 0 14px;
-      color: #fff;
+      color: rgb(255, 0, 0);
     }
   }
 
