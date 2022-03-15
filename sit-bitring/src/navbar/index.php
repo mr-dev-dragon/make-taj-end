@@ -1,5 +1,5 @@
 
-<?php  $nav_t = false; 
+<?php  
 if (isset($_POST['log_up'])){
   $nav_t = true; 
 } else {
@@ -52,7 +52,7 @@ if (isset($_POST['log_up'])){
     <?php } else { ?>   
        <ul class="navbar-rightt">
             <li class="nav-item ">
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModall">
                 <i   class="bi  bi-heart"></i > 
                   <span class="badge bg-danger badge-danger badge-pill">
                       <span data-counter="cart_items">2</span>

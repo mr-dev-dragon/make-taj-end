@@ -13,17 +13,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-<form action="pay.php" method="post">
-         <table class="show-cart table">
-          
+  <form  method="post">
+         <table class="show-cart table">  
         </table>
         <div class='hoho'>Total price: <span class=" btn- total-cart"> </span>$</div>
       </div>
-      <div class="modal-footer">
-
-        <button class="clear-cart btn btn-danger"><i class="bi bi-trash3"></i>Clear Cart</button>
-        <button type="submit" class="btn btn-success"> <i class="bi bi-credit-card-2-front-fill"></i> buy now</button>
-</form>      
+        <div><button type="button" class="clear-cart btn btn-danger"><i class="bi bi-trash3"></i>Clear Cart</button></div>
+        <BR>
+        <button name='buynow' type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-credit-card-2-front-fill"></i> buy now</button>
+  </form>      
       </div>
     </div>
   </div>
@@ -40,3 +38,26 @@
       color:red;
     }
  </style>
+ <?php 
+  
+
+
+if (isset($_POST['buynow'])){
+
+  $id = $_POST['id'];
+  $productName = $_POST['productName'];
+
+  $mysqli->query("INSERT INTO `orderdetails`( `productID`, `orderedQuantity`) 
+  VALUES ('[value-2]','[value-3]')") or die($mysqli->error());
+
+}
+
+
+
+ 
+ 
+ include 'pay.php';
+ 
+ 
+ 
+ ?>

@@ -1,5 +1,14 @@
 
     
+<?php
+$array = [];
+$_SESSION["heart"] = $array = []; 
+   $heart = true;
+
+            
+
+
+?>
 <div id="toast"></div>
 <div id="toast-cart"></div>
 <div class="containerc">
@@ -28,9 +37,17 @@
 <?php while ($row = $result->fetch_assoc()): ?>
         <div class=" col-lg-3">
           <div class="card" style="width: 18rem;">
-        <span id="heart" class="heart"><i onclick="wishList()" class="fas fa-heart"></i></span>
+        <button method="post" id="heart" class="heart">
+          <i onclick="wishList()" name="heart" class="fas fa-heart"></i>
+          <?php
+
+              $heart = true;
+               array_push($array ,$row['productID']);
+            
+            ?>
+        </button>
         <img height="300" src="<?php echo $row['image']; ?>"class="first-image">
-        <center> <h1 id="titlel">    <?php echo $row['productName']; ?></h1>   </center>
+        <center> <h1 id="titlel">    <?php echo $row['productName']; ?></h1></center>
         <div class="card-body">
           <a id='description' ><center> <?php echo $row['description']; ?></center></a>
           <hr>
@@ -45,15 +62,23 @@
                   }else{ echo $row['unitPrice'] . "$"; }
                  ?>
                   </h4>
-                  <p class="pp add-to-cart"data-price="<?php  echo $row['unitPrice'] ;?>"
+                  <p onclick="vvv()" class="pp add-to-cart"data-price="<?php  echo $row['unitPrice'] ;?>"
                    data-name="<?php echo $row['image']; ?>" type="submit"><i class="bi  bi-plus-circle-dotted"></i> add to cart</p> 
                </div>
           </form>
         </div>
       </div>
       </div>
-  
-    <?php endwhile?>
+    <?php endwhile ?>
+
+
+
+
+
+
+
+
+    
     <style>
       .pp{
           background-color:#37680f;
@@ -78,7 +103,6 @@
 var shoppingCart = (function() {
 
   cart = [];
-  
   function Item(name, price, count, img ,id) {
     this.name = name;
     this.price = price;
@@ -216,9 +240,9 @@ function displayCart() {
   
        + "<td><img src='" + cartArray[i].name + "' width='70px' height='70px' id='cart-img'></td>"
       + "<td class='btn-'>" + cartArray[i].price + "$" + "</td>"
-      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-success' data-name=" + cartArray[i].name + ">-</button>"
+      + "<td><div class='input-group'><button type='button' class='minus-item input-group-addon btn btn-success' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-      + "<button class='plus-item btn btn-success input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<button type='button' class='plus-item btn btn-success input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
   
       + " = " 
       + "<td class='btn-'>" + cartArray[i].total +"$" + "</td>" 

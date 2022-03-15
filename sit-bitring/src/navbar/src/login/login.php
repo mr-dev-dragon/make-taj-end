@@ -104,10 +104,10 @@ if (isset($_POST['log_up'])){
  if ($password1 ==  $password2 ){
  $mysqli->query("INSERT INTO `customers`(`lastName`, `firstName`, `adress`, `phone`, `email`, `password`) 
  VALUES ('$l_name','$f_name','$adress','$phone','$gmail','$password2')") or die($mysqli->error());
-  $_SESSION['f_nam'] =  "$f_name";
-  $_SESSION['l_name'] = "$l_name";
-  $_SESSION['img'] = "$img";
-  $_SESSION['EM'] = "  $gmail ";
+  $_SESSION['f_nam'] =  $f_name;
+  $_SESSION['l_name'] = $l_name;
+  $_SESSION['img'] = $img;
+  $_SESSION['EM'] = $gmail;
 
   $pass = true;
 
