@@ -75,11 +75,11 @@ alter table Orders add constraint FK_commander foreign key (customerCode)
 
 
 
-/*Delete From OrderDetail;
+Delete From OrderDetail;
 
 Delete From Orders;
 
 Delete From Products;
 
-Delete From Customers;*/
+Delete From Customers;
 
